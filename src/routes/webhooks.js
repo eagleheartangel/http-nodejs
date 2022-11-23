@@ -1,7 +1,7 @@
 import { Router } from 'express';
 const router = Router();
 
-router.post('/completed', (req, res) => {
+router.get('/completed', (req, res) => {
   return res.render('index', { respuesta: 'Hola mundo !!' });
 });
 
