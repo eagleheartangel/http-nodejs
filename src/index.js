@@ -23,7 +23,7 @@ import router from './routes/webhooks';
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use('/api', router);
+app.use(router);
 
 app.listen(port, () => {
   console.log('Listen on port ' + port);
