@@ -1,8 +1,8 @@
-import express from 'express';
-import morgan from 'morgan';
-import cors from 'cors';
-import engine from 'ejs-mate';
-import path from 'path';
+const express = require('express');
+const morgan = require('morgan');
+const cors = require('cors');
+const engine = require('ejs-mate');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 8080;
@@ -18,7 +18,7 @@ app.use(
   })
 );
 
-import router from './routes/webhooks';
+const router = require('./routes/webhooks');
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
