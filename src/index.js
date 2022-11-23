@@ -5,7 +5,6 @@ const engine = require('ejs-mate');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3000;
 
 app.engine('ejs', engine);
 app.set('views', path.join(__dirname, 'views'));
@@ -25,6 +24,6 @@ app.use(express.json());
 
 app.use(router);
 
-app.listen(port, () => {
-  console.log('Listen on port ' + port);
+app.listen(3000, () => {
+  console.log('Listen on port 3000');
 });
