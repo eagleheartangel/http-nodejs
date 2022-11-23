@@ -5,7 +5,7 @@ const engine = require('ejs-mate');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 app.engine('ejs', engine);
 app.set('views', path.join(__dirname, 'views'));
