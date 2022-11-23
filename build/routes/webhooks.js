@@ -1,0 +1,1 @@
+"use strict";var _express=require("express"),router=(0,_express.Router)();router.get("/",function(a,b){return b.render("index",{respuesta:"Hola mundo !!"})}),module.exports=router;
